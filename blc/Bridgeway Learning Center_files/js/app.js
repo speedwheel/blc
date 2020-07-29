@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    blc.init();
+    console.log( "ready!" );
 });
 
 var blc = function() {
@@ -9,7 +9,6 @@ var blc = function() {
 
    var _getCalendar = function() {
         var $calendar = $('.js-calendar');
-        $calendar.html('<div class="d-flex justify-content-center"><div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div></div>');
         $.ajax({
             url: "https://calendar.homeschoolacademy.com/api/events", 
             beforeSend: function (xhr) {
@@ -34,14 +33,16 @@ var blc = function() {
                     if (dateString.length > 10) {
                         hasTime = true;
                     }
-                    date = moment.tz(dateString,"America/New_York");
-                    console.log(date)
-                    
+                    date = new Date(dateString);
+
+                    const month = date.toLocaleString('default', { month: 'short' });
+                    const weekday = date.toLocaleString('default', { weekday: 'short' });
                     var time = '';
                     if (hasTime) {
-                        time = ' at ' + date.format('hh') + ':' + date.format('mm');
+                        console.log(date.getHours())
+                        time = ' at ' + date.getHours() + ':' + date.getMinutes();
                     }
-                    var $li = $('<li/>').addClass('event-item ' + googleColorIDs[event.colorId]).html(date.format('ddd') + ', ' + date.format('MMM') + ' ' + time + ' EST - ' + event.summary);
+                    var $li = $('<li/>').addClass('event-item ' + googleColorIDs[event.colorId]).html(weekday + ', ' + month + ' ' + date.getDay() + time + ' ' + event.summary);
                     $ul.append($li);
                     $calendar.html($ul);
                 });   
@@ -54,3 +55,5 @@ var blc = function() {
         }
       }
 }();
+
+blc.init();
