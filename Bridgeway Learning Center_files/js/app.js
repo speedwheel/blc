@@ -34,17 +34,19 @@ var blc = function() {
                     if (dateString.length > 10) {
                         hasTime = true;
                     }
-                    date = moment.tz(dateString,"America/New_York");
-                    console.log(date)
+                    date = moment(dateString);
                     
                     var time = '';
                     if (hasTime) {
-                        time = ' at ' + date.format('hh') + ':' + date.format('mm');
+                        time = ' at ' + date.format('hh') + ':' + date.format('mm') + ' (' + moment.tz(moment.tz.guess()).zoneAbbr() + ')';
                     }
-                    var $li = $('<li/>').addClass('event-item ' + googleColorIDs[event.colorId]).html(date.format('ddd') + ', ' + date.format('MMM') + ' ' + time + ' EST - ' + event.summary);
+                    var $li = $('<li/>').addClass('event-item ' + googleColorIDs[event.colorId]).html(date.format('ddd') + ', ' + date.format('MMM') + ' ' + time  +' - ' + event.summary);
                     $ul.append($li);
                     $calendar.html($ul);
                 });   
+            },
+            error: function() {
+                $calendar.html('<div class="text-danger text-center">Error loading calendar.</div>');
             }
         });
     }
