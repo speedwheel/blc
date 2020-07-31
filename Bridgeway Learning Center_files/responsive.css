@@ -275,7 +275,9 @@
 	.page-nav {
 		-ms-flex-pack: center !important;
 		justify-content: center !important;
-		margin-top: 10rem!important;
+		margin-top: 0!important;
+		padding-top: 0!important;
+		top: -50px;
 	}
 	.page-nav .arrow {
 		display: none;
@@ -292,8 +294,29 @@
 	.handbooks {
 		margin: 0 auto;
 	}
-
-  
+	.page-head {
+		position: inherit;
+		width: 100%;
+		top: 0!important;
+		margin-bottom: 2rem;
+	}
+	.change-student {
+		-ms-flex-pack: center !important;
+		justify-content: center !important;
+	}
+	.return-home {
+		color: #2D6094;
+	}
+	.return-home::before {
+		border: solid#2D6094;
+		border-width: 0 2px 2px 0;
+	}
+	.parent-student-view {
+		margin-top: 0!important;
+	}
+	#wholePage {
+		margin-bottom: 1rem;
+	}
 }
 @media (max-width: 750px) {
 	.lightning {

@@ -2811,28 +2811,28 @@ margin:0;
 	font-size: 1.4rem;
 }
 .arrow {
-	border: solid #2F5F92;
+	border: solid #4d4d4d;
 	border-width: 0 3px 3px 0;
 	display: inline-block;
 	padding: 4px;
   }
   
-  .right {
+  .arrow.right {
 	transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
   }
   
-  .left {
+  .arrow.left {
 	transform: rotate(135deg);
 	-webkit-transform: rotate(135deg);
   }
   
-  .up {
+  .arrow.up {
 	transform: rotate(-135deg);
 	-webkit-transform: rotate(-135deg);
   }
   
-  .down {
+  .arrow.down {
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
   }
