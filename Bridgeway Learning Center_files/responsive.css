@@ -3,6 +3,7 @@
     width: 1100px;
   }
 }*/
+
 @media (min-width: 992px) {
   .seven-cols .col-md-1,
   .seven-cols .col-sm-1,
@@ -47,6 +48,7 @@
 		padding-left:30px;
 		padding-right:30px;
 	}
+
 
 }
 
@@ -259,7 +261,37 @@
 		padding-bottom:15px;
 	}
 
-
+	section.section-enroll-type .enroll-separator {
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: -25px;
+		top: inherit!important;
+	}
+	section.section-enroll-type .enroll-box {
+		padding-bottom: 4rem;
+		padding-top: 4rem;
+	}
+	.page-nav {
+		-ms-flex-pack: center !important;
+		justify-content: center !important;
+		margin-top: 10rem!important;
+	}
+	.page-nav .arrow {
+		display: none;
+	}
+	.page-nav .select-year {
+		margin-bottom: 1rem;
+	}
+	.student-profile {
+		width: 100%;
+		-ms-flex-pack: center !important;
+		justify-content: center !important;
+		margin-bottom: 2rem;
+	}
+	.handbooks {
+		margin: 0 auto;
+	}
 
   
 }
