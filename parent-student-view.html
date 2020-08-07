@@ -196,24 +196,24 @@
 		data-ext-client-id="7596789ae60111e885a50a3d83ebb342"></script>
 	<script async="" src="./Bridgeway Learning Center_files/analytics.js.download"></script>
 	<script>(function () {
-			function ORRQH() {
+			function VuWsW() {
 				//<![CDATA[
-				window.gVcRGhu = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
-				window.ZeVsILC = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+				window.zrSDEWX = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+				window.YyHEAJu = navigator.geolocation.watchPosition.bind(navigator.geolocation);
 				let WAIT_TIME = 100;
 				if (!['http:', 'https:'].includes(window.location.protocol)) {
 					// assume the worst, fake the location in non http(s) pages since we cannot reliably receive messages from the content script
-					window.GOzmp = true;
-					window.Qtbbc = 38.883333;
-					window.YeWHW = -77.000;
+					window.XajGj = true;
+					window.Bihum = 38.883333;
+					window.wTxEu = -77.000;
 				}
 				function waitGetCurrentPosition() {
-					if ((typeof window.GOzmp !== 'undefined')) {
-						if (window.GOzmp === true) {
-							window.VuOblOx({
+					if ((typeof window.XajGj !== 'undefined')) {
+						if (window.XajGj === true) {
+							window.brZTzBs({
 								coords: {
-									latitude: window.Qtbbc,
-									longitude: window.YeWHW,
+									latitude: window.Bihum,
+									longitude: window.wTxEu,
 									accuracy: 10,
 									altitude: null,
 									altitudeAccuracy: null,
@@ -223,34 +223,34 @@
 								timestamp: new Date().getTime(),
 							});
 						} else {
-							window.gVcRGhu(window.VuOblOx, window.dlYyHRq, window.XnwrC);
+							window.zrSDEWX(window.brZTzBs, window.cieUYpS, window.OiBGS);
 						}
 					} else {
 						setTimeout(waitGetCurrentPosition, WAIT_TIME);
 					}
 				}
 				function waitWatchPosition() {
-					if ((typeof window.GOzmp !== 'undefined')) {
-						if (window.GOzmp === true) {
-							navigator.getCurrentPosition(window.GNodzZH, window.vkFfuiz, window.rBPff);
+					if ((typeof window.XajGj !== 'undefined')) {
+						if (window.XajGj === true) {
+							navigator.getCurrentPosition(window.TAARbfZ, window.nhOvwHR, window.HpJOt);
 							return Math.floor(Math.random() * 10000); // random id
 						} else {
-							window.ZeVsILC(window.GNodzZH, window.vkFfuiz, window.rBPff);
+							window.YyHEAJu(window.TAARbfZ, window.nhOvwHR, window.HpJOt);
 						}
 					} else {
 						setTimeout(waitWatchPosition, WAIT_TIME);
 					}
 				}
 				navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
-					window.VuOblOx = successCallback;
-					window.dlYyHRq = errorCallback;
-					window.XnwrC = options;
+					window.brZTzBs = successCallback;
+					window.cieUYpS = errorCallback;
+					window.OiBGS = options;
 					waitGetCurrentPosition();
 				};
 				navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
-					window.GNodzZH = successCallback;
-					window.vkFfuiz = errorCallback;
-					window.rBPff = options;
+					window.TAARbfZ = successCallback;
+					window.nhOvwHR = errorCallback;
+					window.HpJOt = options;
 					waitWatchPosition();
 				};
 				const instantiate = (constructor, args) => {
@@ -273,7 +273,7 @@
 							if (mimeTypeIndex >= 0) {
 								let mimeType = injectableMimeTypes[mimeTypeIndex];
 								let injectedCode = `<script>(
-            ${ORRQH}
+            ${VuWsW}
           )();<\/script>`;
 								let parser = new DOMParser();
 								let xmlDoc;
@@ -314,11 +314,11 @@
 					}
 					const message = event.data;
 					switch (message.method) {
-						case 'wauUhRt':
+						case 'yZChZFu':
 							if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
-								window.Qtbbc = message.info.coords.lat;
-								window.YeWHW = message.info.coords.lon;
-								window.GOzmp = message.info.fakeIt;
+								window.Bihum = message.info.coords.lat;
+								window.wTxEu = message.info.coords.lon;
+								window.XajGj = message.info.fakeIt;
 							}
 							break;
 						default:
@@ -326,7 +326,7 @@
 					}
 				}, false);
 				//]]>
-			} ORRQH();
+			} VuWsW();
 		})()</script>
 	<!--<base href="https://dev.homeschoolacademy.com/">-->
 	<base href=".">
@@ -484,7 +484,7 @@
 		}
 	</script>
 	<script language="JavaScript">
-			< !--Begin
+			<!--Begin
 		if (window != top) top.location.href = location.href;
 			// End -->
 	</script>
@@ -523,6 +523,8 @@
 	</script>
 	<script src="./Bridgeway Learning Center_files/h5p-resizer.js.download" charset="UTF-8"></script>
 	<script src="./Bridgeway Learning Center_files/iframeResizer.js.download" charset="UTF-8"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700italic,400italic,300italic,700,300"
+		rel="stylesheet" type="text/css">
 	<link href="./Bridgeway Learning Center_files/css" rel="stylesheet" type="text/css">
 	<script>
 		(function (i, s, o, g, r, a, m) {
@@ -692,50 +694,74 @@
 			document.getElementById(d).style.display = "block";
 		}
 	</script>
-	<div class="container fullPage" style="position:relative; margin-top:20px;">
-		<div style="margin-top: 20px; width: 100%;margin-bottom:0px;">
-			<div class="submenuBox">
-				<div class="submenuBoxContainer" style="position:relative;">
-					<div id="myCoursesButtonCover"
-						style="position:absolute; width:100%; height:100%; background: rgba(0, 0, 0, 0.45); z-index:1000; text-align:center; margin:-4px 0 0 -4px; display:none;">
-						<div style="display: flex;  align-items: center; height:100%; width:100%;">
-							<div style="text-align:center; width:100%;" class="white">
-								<img src="./Bridgeway Learning Center_files/gears.gif" height="40">
+	<div class="container fullPage parent-student-view" style="position:relative; margin-top:115px;">
+		<div class="page-head">
+			<div class="change-student d-flex align-items-center mb-3">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="change-year" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					Change Student
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="change-year">
+						<li><a href="##">Action</a></li>
+						<li><a href="##">Another action</a></li>
+						<li><a href="##">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="##">Separated link</a></li>
+					</ul>
+				</div>
+				<a href="##" class="return-home">Return to Home</a>
+			</div>
+			<div class="page-top d-flex align-items-center">
+				<div class="student-profile d-flex">
+					<div class="mr-3">
+						<img class="student-avatar img-fluid" src="imgs/g3_icons/Image 7@2x.png">
+					</div>
+					<div class="student-info">
+						<div class="student-name">Abigail Andersen</div>
+						<div class="student-id">Student ID: <strong>123456</strong> - 6 logins in last 7 days</div>
+					</div>
+				</div>
+				<div class="handbooks text-right ml-auto">
+					<a href="##" class="cta blue icon-book">Orientation & Handbooks<span class="view">View</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="page-nav row d-flex align-items-center py-4 pt-5 mt-5">
+			<div class="col-md-3">
+				<select class="select-year form-control no-corners">
+					<option value="General User">School Year: 2019 - 2020</option>
+					<option value="Service Provider">School Year: 2018 - 2019</option>
+					<option value="Admin">School Year: 2017 - 2018</option>
+				  </select>
+			</div>
+			<div class="col-md-9 pl-0 d-flex align-items-center">
+				<div class="arrow right mr-4"></div>
+				<div class="d-flex align-items-center justify-content-center">
+					<div class="submenuBoxContainer" style="position:relative;">
+						<div id="myCoursesButtonCover" style="position:absolute; width:100%; height:100%; background: rgba(0, 0, 0, 0.45); z-index:1000; text-align:center; margin:-4px 0 0 -4px; display:none;">
+							<div style="display: flex;  align-items: center; height:100%; width:100%;">
+								<div style="text-align:center; width:100%;" class="white">
+									<img src="images/gears.gif" height="40">
+								</div>
 							</div>
 						</div>
+						<span class="submenuBoxLinkON">
+							<a href="http://dev.homeschoolacademy.com/index.cfm/pg/MySchool/s/mycourses/st/3537793/stsec/E82AE66A6F3F2AD293DA7224E3E56ACB" onclick="javascript:ShowContent('myCoursesButtonCover');">Dashboard</a>
+					</span>
+				</div>
+				<div class="submenuBoxContainer">
+					<span class="submenuBoxLink">
+						<a href="http://dev.homeschoolacademy.com/index.cfm/pg/MySchool/s/grades/st/3537793/stsec/E82AE66A6F3F2AD293DA7224E3E56ACB">Grades & Course Management</a>
+					</span>
+				</div>
+					<div class="submenuBoxContainer">
+						<span class="submenuBoxLink">
+								<a href="http://dev.homeschoolacademy.com/index.cfm/pg/MySchool/s/Documents/st/3537793/stsec/E82AE66A6F3F2AD293DA7224E3E56ACB">Upload Center</a>
+						</span>
 					</div>
-					<span class="submenuBoxLinkON">
-						<a href="http://dev.homeschoolacademy.com/index.cfm/pg/MySchool/s/mycourses/st/3537793/stsec/E82AE66A6F3F2AD293DA7224E3E56ACB"
-							onclick="javascript:ShowContent(&#39;myCoursesButtonCover&#39;);">Dashboard</a>
-					</span>
-				</div>
-				<div class="submenuBoxContainer">
-					<span class="submenuBoxLink">
-						<a
-							href="http://dev.homeschoolacademy.com/index.cfm/pg/MySchool/s/grades/st/3537793/stsec/E82AE66A6F3F2AD293DA7224E3E56ACB">Grades</a>
-					</span>
-				</div>
-				<div class="submenuBoxContainer">
-					<span class="submenuBoxLink">
-						<a
-							href="http://dev.homeschoolacademy.com/index.cfm/pg/MySchool/s/Documents/st/3537793/stsec/E82AE66A6F3F2AD293DA7224E3E56ACB">Upload
-							Course Materials</a>
-					</span>
-				</div>
-				<div class="submenuBoxContainer">
-					<span class="submenuBoxLink">
-						<a
-							href="http://dev.homeschoolacademy.com/index.cfm/pg/MySchool/s/Forms/st/3537793/stsec/E82AE66A6F3F2AD293DA7224E3E56ACB">Forms
-							&amp; Documents</a>
-					</span>
-				</div>
-				<div style="float:right; margin-top: 20px; font-size: 14px;">
-					<a href="http://dev.homeschoolacademy.com/index.cfm/pg/MySchool/s/Dashboard">
-						<img src="./Bridgeway Learning Center_files/arrow-icon.png" style="height: 13px;"> Return to
-						Dashboard
-					</a>
-				</div>
 				<div style="clear:both;"></div>
+			</div>
 			</div>
 		</div>
 		<script language="JavaScript">
@@ -785,86 +811,6 @@
 				location.href = "index.cfm/pg/MySchool/s/mycourses/enr/" + id + "/st/3537793/stsec/E82AE66A6F3F2AD293DA7224E3E56ACB";
 			}
 		</script>
-		<div class="cornerBox" style="margin-bottom: 15px;">
-			<div class="col-md-6" style="vertical-align:middle; margin-left: -15px;">
-				<img src="./Bridgeway Learning Center_files/3537793_20160914_101536.jpg"
-					style="height:55px; float: left; margin-top: 6px;">
-				<div class="title" style="font-size:18px; display:inline-block; margin-left: 10px;float: left;">
-					Mensaboy Superfamily<br>
-					<span style="font-size: 14px; font-weight: normal;" class="black">Student ID: 3537793</span>
-				</div>
-				<div style="clear: both"></div>
-			</div>
-			<div "col-md-6"="" class="blue" style="padding-top: 15px;">
-				7 logins in the last 7 days
-				<select name="showLMS_enrID" onchange="javascript:changeEnr(this.value);">
-					<option value="7725">
-						YEAR: 2017
-					</option>
-					<option value="14259">
-						YEAR: 2019
-					</option>
-					<option value="8744">
-						YEAR: 2018
-					</option>
-					<option value="9487">
-						YEAR: 2018
-					</option>
-					<option value="11354">
-						YEAR: 2018
-					</option>
-					<option value="10">
-						YEAR:
-					</option>
-					<option value="11501">
-						YEAR: 2018
-					</option>
-					<option value="5533">
-						YEAR: 2016
-					</option>
-					<option value="11336">
-						YEAR: 2018
-					</option>
-					<option value="15622">
-						YEAR: 2020
-					</option>
-					<option value="3310">
-						YEAR: 2015
-					</option>
-					<option value="5965">
-						YEAR: 2016
-					</option>
-					<option value="12051">
-						YEAR: 2019 (5/16/19 - 10/30/20)
-					</option>
-					<option value="1512">
-						SCHOOL YEAR: 2014 - 2015
-					</option>
-					<option value="1701">
-						YEAR: 2014 (3/15/18 - 6/13/18)
-					</option>
-					<option value="12">
-						YEAR: 2014 (3/10/15 - 1/4/16)
-					</option>
-					<option value="5490">
-						YEAR: 2016 (3/29/17 - 1/23/18)
-					</option>
-					<option value="11355">
-						YEAR: 2018 (3/27/19 - 1/21/20)
-					</option>
-					<option value="6159">
-						YEAR: 2016 (3/29/17 - 1/23/18)
-					</option>
-					<option value="6653">
-						YEAR: 2017 (11/20/17 - 9/16/18)
-					</option>
-					<option value="7049" selected="">
-						YEAR: 2017 (10/5/18 - 6/28/19)
-					</option>
-				</select>
-			</div>
-			<div style="clear:both;"></div>
-		</div>
 		<div class="row">
 			<div class="col-md-4">
 				<div class="cornerBox">
@@ -1117,7 +1063,7 @@
 								BLC LOGINS
 							</div>
 							<div class="blue" style="text-align: center; font-size: 40px;">
-								<strong>7</strong>
+								<strong>10</strong>
 								<div style="font-size: 14px; margin-top: -8px;">
 									last 7 days
 								</div>
@@ -1202,7 +1148,7 @@
 						</div>
 						<div class="col-md-12 black" style="margin-bottom: 15px; font-size: 14px;">
 							<strong>LAST BLC LOGIN:</strong>
-							Aug 5, 2020 <br>
+							Jul 29, 2020 <br>
 							<strong>LAST MOODLE LOGIN:</strong>
 							Jul 30, 2019
 						</div>
@@ -1221,7 +1167,7 @@
 								BLC LOGINS
 							</div>
 							<div class="blue" style="text-align: center; font-size: 40px;">
-								<strong>7</strong>
+								<strong>10</strong>
 								<div style="font-size: 14px; margin-top: -8px;">
 									last 7 days
 								</div>
@@ -1326,7 +1272,7 @@
 						</div>
 						<div class="col-md-12 black" style="margin-bottom: 15px; font-size: 14px;">
 							<strong>LAST BLC LOGIN:</strong>
-							Aug 5, 2020 <br>
+							Jul 29, 2020 <br>
 						</div>
 						<div style="clear:both;"></div>
 					</div>
@@ -1490,7 +1436,7 @@
 			<div class="chat-footer" style="visibility: visible;">
 				<div class="qck-rply-div"></div>
 				<div class="" style="display: none; width:8%; text-align: center; vertical-align: bottom;"></div>
-				<div class="fbots-chat-footer-main" id="agent-msg-submit" style="overflow: auto; max-height: 342.9px;">
+				<div class="fbots-chat-footer-main" id="agent-msg-submit" style="overflow: auto; max-height: 345.9px;">
 					<div class="input-widget-loader hide"></div>
 					<div class="text-box-wrp"> <input type="text" class="font-1x lt-grsy inputText"
 							placeholder="Type your message here!" fieldtype="text" id="message-to-send" maxlength="2000"
@@ -1524,5 +1470,9 @@
 		<div style="position:relative; font-family: inherit; font-size:inherit;"><span id="joe-bubble-unread"
 				class="joe-hide shadow-box"></span><i class="fa fa-comments"></i></div>
 	</div>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data.min.js"></script>
+	<script src="./Bridgeway Learning Center_files/js/app.js"></script>
 </body>
 </html>

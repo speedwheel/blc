@@ -1162,7 +1162,6 @@ a.personalResourcesLinkON:visited  {
 	height:60px;
 	outline: 0;
 	border: 0;
-
 	-moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -khtml-border-radius: 5px;
@@ -2703,7 +2702,7 @@ margin:0;
 }
 .cta.icon-book::before {
 	content:"";
-	background: url(../images/g3_icons/ic_library_books_48px.svg) no-repeat;
+	background: url(../imgs/g3_icons/ic_library_books_48px.svg) no-repeat;
 	width: 15px;
     height: 15px;
     display: inline-block;
@@ -2772,7 +2771,7 @@ margin:0;
 	position: absolute;
 	right: 10px;
 	top: 17px;
-	background: url(../images/g3_icons/ic_keyboard_arrow_down_48px.svg) no-repeat;
+	background: url(../imgs/g3_icons/ic_keyboard_arrow_down_48px.svg) no-repeat;
 	background-size: contain;
 	border: 0;
 	width: 13px;
